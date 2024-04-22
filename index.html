@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        body{
+            height: 2000px;
+        }
+    </style>
+  </head>
+  <body>
+
+
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link list-movies active" aria-current="page" href="#">Popular</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link list-movies" href="#">Top Rated</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link list-movies" href="#">Upcoming</a>
+              </li>
+              
+            </ul>
+            <form id="search-form" class="d-flex" role="search">
+              <input id="moviename" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+
+    <!-- Content -->
+
+    <div class="container">
+        <h1 class="text-center text-uppercase fs-1 heading"></h1>
+        <div class="row list_movies"></div>
+
+        <div class="single_movies">
+          <div class="single_movie_content">
+            <h1>Single Movie</h1>
+          </div>
+          <div class="single_movie_cast">
+            <h1>Cast Details</h1>
+            <div class="row movie_cast_record">
+
+            </div>
+          </div>
+        </div>
+       
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js "></script>
+
+    <script src="task.js"></script>
+  </body>
+</html>
